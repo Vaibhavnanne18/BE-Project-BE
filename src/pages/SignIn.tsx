@@ -1,8 +1,9 @@
 import {useContext, useState} from "react";
 import APIContext from "../context/APIContext";
 import axios from "axios";
-import ServiceMasterLogo from '../assets/images/service-master-logo.png';
+import ServiceMasterLogo from '../assets/images/linkedin.svg';
 import {NavLink, useNavigate} from "react-router-dom";
+import "../App.css"
 
 const SignIn = () => {
   const url = useContext(APIContext);
@@ -50,7 +51,7 @@ const SignIn = () => {
             <div className='card-body px-sm-5 px-4'>
               <div className='row text-center'>
                 <div className='col-12'>
-                  <img src={ServiceMasterLogo} alt="service-master-logo" className='mt-3 mb-2 w-50'/>
+                  <img src={ServiceMasterLogo} alt="service-master-logo" className='mt-3 img mb-2 w-50'/>
                 </div>
               </div>
               <div className='row text-center'>

@@ -2,7 +2,7 @@ import {NavLink, useNavigate} from "react-router-dom";
 
 import ServiceMasterLogo from '../assets/images/linkedin.svg';
 import {AdminString, CustomerString, ProviderString} from "../Utilities";
-
+import "../App.css"
 const Navigation = () => {
   const navigate = useNavigate();
 
@@ -13,9 +13,9 @@ const Navigation = () => {
 
   return (
     <header className='mb-5'>
-      <nav className="navbar navbar-expand-lg navbar-dark header-bg scrolling-navbar py-2">
+      <nav className="navbar navbar-expand-lg navbar-white scrolling-navbar py-2">
         <NavLink className="navbar-brand text-dark " to='/'>
-          <img src={ServiceMasterLogo} alt="service-master-logo" className='w-75'/>
+          <img src={ServiceMasterLogo} alt="service-master-logo" className='img'/>
         </NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent"

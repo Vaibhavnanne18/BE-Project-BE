@@ -70,3 +70,7 @@ code {
 .select-pointer {
     cursor: pointer;
 }
+
+.img{
+    width: 200px;
+}
